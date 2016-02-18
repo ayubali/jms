@@ -1,0 +1,21 @@
+e. First of all make sure that the Glassfish server is running and the ConnectionFactory and Resource are created. For that you can open the asadmin console and type in the list-jms-resources command to see the JMS resources on your Glassfish installation. This is already described above.
+
+In order to run the client successfully you need a few jar files on your classpath.
+
+From your Glassfish lib folder:
+
+gf-client.jar
+javaee.jar
+From your Glassfish modules folder:
+javax.jms.jar
+And these files are in imqjmsra.rar archive that you can find in your glassfish\mq\lib directory. You need to manually extract all of these jar files from imqjmsra.rar and place them in the classpath of your JMS Client.
+fscontext.jar
+imqbroker.jar
+imqjmsbridge.jar
+imqjmsra.jar
+imqjmx.jar
+imqstomp.jar
+Once you have your classpath setup and the Glassfish is up and running then you can run the client to see the JMS communication in action. Here is the output when I run the client on my machine.
+
+
+more on http://techtipsjava.blogspot.com/2013/05/jms-on-glassfish-queue-and-topic-with.html
